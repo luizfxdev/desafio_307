@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samurai Dragão - Enigma das Palavras Ocultas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video id="background-video" autoplay muted loop>
+      <source src="assets/background.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <!-- Container principal do desafio -->
+    <div class="challenge-container">
+      <div class="header">
+        <h1>⚔️ Samurai Dragão</h1>
+        <h2>Enigma das Palavras Ocultas</h2>
+        <p class="subtitle">Invoque a energia ancestral e desvende seus segredos!</p>
+      </div>
+
+      <!-- Inputs para entrada manual -->
+      <div class="input-section">
+        <div class="input-group">
+          <label for="magic-letters">Letras Mágicas:</label>
+          <input type="text" id="magic-letters" placeholder="Ex: abceltesr" tabindex="1" />
+        </div>
+
+        <div class="input-group">
+          <label for="power-words">Palavras de Poder (separadas por vírgula):</label>
+          <textarea
+            id="power-words"
+            placeholder="Ex: lua, estrela, sabedoria, elefante, astro"
+            rows="3"
+            tabindex="2"
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Área dos botões -->
+      <div class="button-section">
+        <button class="glow-on-hover" id="liberar-btn" type="button" tabindex="3">⚡ LIBERAR</button>
+        <button class="glow-on-hover" id="voltar-btn" type="button" tabindex="4">🔄 VOLTAR</button>
+      </div>
+
+      <!-- Seção de Resultado -->
+      <div class="result-section" id="result-section">
+        <h3>🔮 Resultado da Invocação</h3>
+        <div class="result-content" id="result-content">
+          <p class="waiting-message">Aguardando as letras mágicas e palavras de poder...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
